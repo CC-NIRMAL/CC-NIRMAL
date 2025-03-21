@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Chalaka</h1>
-<h3 align="center">A passionate frontend developer from Sri Lanaka</h3>
+<h3 align="center">LEARNING</h3>
 
 - 🔭 I’m currently working on **DOJO-2Y**
 
