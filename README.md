@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Chalaka</h1>
 <h3 align="center">LEARNING</h3>
 
-- 🔭 I’m currently working on **DOJO-2Y**
+- 🔭 I’m currently working on **DOJO-3Y**
 
 
 <p align="left">
