@@ -29,7 +29,7 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=CC-NIRMAL&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=CC-NIRMAL&show_icons=true&theme=radical" alt="GitHub Stats" />
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CC-NIRMAL&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
 </p>
 
@@ -52,7 +52,7 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=CC-NIRMAL&theme=radical&no-frame=true&row=2&column=4" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=CC-NIRMAL&theme=radical&no-frame=true&margin-w=15" alt="GitHub Trophies" />
 </p>
 
 ---
