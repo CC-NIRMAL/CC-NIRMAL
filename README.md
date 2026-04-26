@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=CC-NIRMAL&label=Profile%20views&color=0e75b6&style=flat" alt="profile views" />
 </p>
 
 ## 🚀 About Me
@@ -29,12 +29,12 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=CC-NIRMAL&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CC-NIRMAL&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_GITHUB_USERNAME&theme=react-dark&bg_color=0d1117&hide_border=true" width="94%" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=CC-NIRMAL&theme=react-dark&bg_color=0d1117&hide_border=true" width="94%" alt="Activity Graph" />
 </p>
 
 ---
@@ -42,9 +42,9 @@
 ## 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_GITHUB_USERNAME/output/github-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CC-NIRMAL/CC-NIRMAL/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CC-NIRMAL/CC-NIRMAL/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/CC-NIRMAL/CC-NIRMAL/output/github-snake.svg" />
 </picture>
 
 ---
@@ -52,7 +52,7 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_GITHUB_USERNAME&theme=radical&no-frame=true&row=2&column=4" alt="GitHub Trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=CC-NIRMAL&theme=radical&no-frame=true&row=2&column=4" alt="GitHub Trophies" />
 </p>
 
 ---
