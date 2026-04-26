@@ -1,13 +1,51 @@
-<h1 align="center">Hi 👋, I'm Chalaka</h1>
-<h3 align="center">LEARNING</h3>
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Hi+there,+I'm+Chalaka+Chandika!+%F0%9F%91%8B;Software+Development+Undergraduate;Full-Stack+%7C+Android+%7C+IoT;Actively+seeking+an+internship!" alt="Typing SVG" />
+  </a>
+</div>
 
-- 🔭 I’m currently working on **DOJO-3Y**
+---
 
+### 👨‍💻 About Me
 
-<p align="left">
-</p>
+* 🎓 Undergraduate at the University of Kelaniya (FCT) pursuing a BSc in Information and Communication Technology, specializing in Software Development.
+* 💼 Currently seeking a software development internship to apply my skills in real-world scenarios.
+* 🚀 Building industry-level UI/UX mockups, full-stack web apps, and native Android applications.
+* 📫 Reach me at: **[Insert your LinkedIn Profile URL here]**
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=CC-NIRMAL&show_icons=true&locale=en&layout=compact" alt="cc-nirmal" /></p>
+### 🛠️ Tech Stack & Tools
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=kotlin,android,python,js,html,css,php,firebase,figma,github,arduino,materialui" alt="Tech Stack" />
+  </a>
+</div>
+
+---
+
+### 📈 GitHub Activity & Stats
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true" width="48%" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight&hide_border=true" width="48%" alt="GitHub Streak" />
+</div>
+<br>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true" width="48%" alt="Top Languages" />
+</div>
+
+---
+
+### 🚀 Featured Projects
+
+| Project Name | Description | Technologies Used |
+|--------------|-------------|-------------------|
+| **Office Transport Daily Passenger Attendance System** | A comprehensive web-based management application for tracking daily passenger attendance. | `HTML/CSS` `JavaScript` `Firebase (Firestore)` |
+| **Currency Identification System** | An IoT and Computer Vision project designed to detect and identify different currencies. | `Python` `YOLO` `ESP32-CAM` `MicroPython` |
+| **Android Contact List App** | A native Android application featuring Material Design 3 guidelines and a custom RecyclerView implementation. | `Kotlin` `Android Studio` |
+
+---
+<div align="center">
+  <i>Visitors:</i><br>
+  <img src="https://profile-counter.glitch.me/YOUR_GITHUB_USERNAME/count.svg" alt="Profile Views" />
+</div>
