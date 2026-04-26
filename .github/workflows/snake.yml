@@ -2,22 +2,32 @@ name: Generate Snake Animation
 
 on:
   schedule:
+    # Runs at 00:00 UTC every day
     - cron: "0 0 * * *"
   workflow_dispatch:
+  push:
+    branches:
+    - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # CRITICAL: This grants the action permission to push to your repo
+    permissions:
+      contents: write 
+      
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate Snake files
+        uses: Platane/snk@v3
         id: snake
         with:
-          github_user_name: YOUR_USERNAME
+          # Automatically fetches your username
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
-      - uses: actions/checkout@v4
       - name: Push to output branch
         uses: peaceiris/actions-gh-pages@v3
         with:
