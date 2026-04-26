@@ -49,14 +49,6 @@
 
 ---
 
-## 🏆 GitHub Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=CC-NIRMAL&theme=radical&no-frame=true&margin-w=15&v=1" alt="GitHub Trophies" />
-</p>
-
----
-
 ## 📫 Connect with me
 
 <p align="left">
