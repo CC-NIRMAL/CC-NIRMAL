@@ -1,59 +1,85 @@
 import os
 import re
+import sys
+
 from github import Github
 
-# Use the automatically provided GITHUB_TOKEN
-token = os.getenv("GH_TOKEN")
-if not token:
-    raise ValueError("No GH_TOKEN found")
 
-g = Github(token)
-user = g.get_user()
-username = user.login
+def shields_escape(text: str) -> str:
+    """Escape a string for use inside a shields.io static badge segment.
 
-# Collect all languages from all repos (including private if token has access)
-languages = {}
-for repo in user.get_repos():
-    # Skip forks if you want only your original projects
-    # if repo.fork: continue
-    repo_langs = repo.get_languages()
-    for lang, bytes_count in repo_langs.items():
-        languages[lang] = languages.get(lang, 0) + bytes_count
+    Shields treats '-' and '_' specially, so they must be doubled; other
+    characters that break URLs are percent-encoded. This handles names like
+    'C#', 'C++', and 'Objective-C' correctly.
+    """
+    return (
+        text.replace("-", "--")
+        .replace("_", "__")
+        .replace(" ", "%20")
+        .replace("#", "%23")
+        .replace("+", "%2B")
+    )
 
-# Sort by bytes descending
-sorted_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)
 
-# Generate markdown: badges using shields.io
-badges = []
-for lang, bytes_count in sorted_langs[:20]:  # show top 20
-    # encode language name for URL
-    encoded = lang.replace(" ", "%20").replace("#", "%23")
-    badge = f"![{lang}](https://img.shields.io/badge/{encoded}-{bytes_count // 1024}KB-blue?logo={encoded}&logoColor=white)"
-    badges.append(badge)
+def main() -> None:
+    token = os.getenv("GH_TOKEN")
+    if not token:
+        sys.exit("Error: GH_TOKEN environment variable is not set.")
 
-# Create a nice table (3 badges per row) to save space
-rows = []
-for i in range(0, len(badges), 3):
-    row = " ".join(badges[i:i+3])
-    rows.append(f"| {row} |")
-    
-if rows:
-    tech_table = "| Technologies |\n|--------------|\n" + "\n".join(rows)
-else:
-    tech_table = "No languages detected yet. Push some code! 🚀"
+    gh = Github(token)
+    user = gh.get_user()
+    print(f"Authenticated as: {user.login}")
 
-# Read the current README
-readme_path = "README.md"
-with open(readme_path, "r") as f:
-    content = f.read()
+    # Aggregate language byte counts across every repo the token can see.
+    languages: dict[str, int] = {}
+    for repo in user.get_repos(type="owner"):
+        if repo.fork:  # skip forks so the stats reflect your own code
+            continue
+        try:
+            for lang, byte_count in repo.get_languages().items():
+                languages[lang] = languages.get(lang, 0) + byte_count
+        except Exception as exc:  # empty repo, access issue, etc.
+            print(f"  Skipped {repo.name}: {exc}")
 
-# Replace the content between <!-- TECH_START --> and <!-- TECH_END -->
-pattern = r"(<!-- TECH_START -->\n).*?(\n<!-- TECH_END -->)"
-replacement = r"\1" + tech_table + r"\2"
-new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    # Sort by total bytes (most used first) and keep the top 20.
+    top = sorted(languages.items(), key=lambda kv: kv[1], reverse=True)[:20]
 
-# Write back
-with open(readme_path, "w") as f:
-    f.write(new_content)
+    if top:
+        badges = [
+            f'<img src="https://img.shields.io/badge/'
+            f'{shields_escape(lang)}-{byte_count // 1024}KB-blue?style=flat-square" '
+            f'alt="{lang}" />'
+            for lang, byte_count in top
+        ]
+        # Lay the badges out 3 per row inside a centered block.
+        rows = ["".join(badges[i:i + 3]) for i in range(0, len(badges), 3)]
+        tech_block = '<p align="center">\n  ' + "<br>\n  ".join(rows) + "\n</p>"
+    else:
+        tech_block = "_No language data yet — go push some code!_ 🚀"
 
-print("Technologies section updated successfully.")
+    readme_path = "README.md"
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    pattern = r"(<!-- TECH_START -->\n).*?(\n<!-- TECH_END -->)"
+    if not re.search(pattern, content, flags=re.DOTALL):
+        sys.exit("Error: TECH_START / TECH_END markers not found in README.md.")
+
+    new_content = re.sub(
+        pattern,
+        lambda m: m.group(1) + tech_block + m.group(2),
+        content,
+        flags=re.DOTALL,
+    )
+
+    if new_content == content:
+        print("Technologies section already up to date — nothing to commit.")
+        return
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    print("README.md technologies section updated.")
+
+
+if __name__ == "__main__":
+    main()
