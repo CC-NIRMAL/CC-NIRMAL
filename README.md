@@ -29,7 +29,7 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=CC-NIRMAL&show_icons=true&theme=radical" alt="GitHub Stats" />
+
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CC-NIRMAL&layout=compact&theme=radical&langs_count=8" alt="Top Languages" />
 </p>
 
