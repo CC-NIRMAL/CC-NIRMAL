@@ -24,13 +24,7 @@
   </a>
 </p>
 
-### 📊 Most Used Languages (auto-updated)
 
-<!-- TECH_START -->
-_Language stats will appear here automatically after the "Update Technologies" workflow runs._
-<!-- TECH_END -->
-
----
 
 ## 📈 GitHub Analytics
 
