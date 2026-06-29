@@ -8,8 +8,8 @@
 
 ## 🚀 About Me
 
-- 🎓 I’m a BSc ICT Undergraduate at **University of Kelaniya (FCT)** specializing in Software Development.
-- 🔭 I’m currently building **industry-level Android apps and full-stack web architectures**.
+- 🎓 I'm a BSc ICT Undergraduate at **University of Kelaniya (FCT)** specializing in Software Development.
+- 🔭 I'm currently building **industry-level Android apps and full-stack web architectures**.
 - 🌱 Exploring **advanced IoT integrations, YOLO object detection, and MicroPython**.
 - 💼 I am actively seeking a **Software Development Internship**.
 - 💬 Ask me about **Kotlin, Android UI/UX, Python, and Firebase**.
@@ -23,6 +23,12 @@
     <img src="https://skillicons.dev/icons?i=kotlin,android,python,js,html,css,php,firebase,figma,github,arduino,materialui" alt="My Tech Stack" />
   </a>
 </p>
+
+### 📊 Most Used Languages (auto-updated)
+
+<!-- TECH_START -->
+_Language stats will appear here automatically after the "Update Technologies" workflow runs._
+<!-- TECH_END -->
 
 ---
 
@@ -52,6 +58,7 @@
 ## 📫 Connect with me
 
 <p align="left">
-  <a href=" " target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://github.com/CC-NIRMAl" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <!-- TODO: replace the LinkedIn href below with your real profile URL -->
+  <a href="https://www.linkedin.com/in/your-profile-here" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/CC-NIRMAL" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
 </p>
