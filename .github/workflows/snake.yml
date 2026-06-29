@@ -7,29 +7,31 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    # CRITICAL: This grants the action permission to push to your repo
+
+    # Grants the action permission to push to the output branch
     permissions:
-      contents: write 
-      
+      contents: write
+
     steps:
       - name: Generate Snake files
         uses: Platane/snk@v3
         id: snake
         with:
-          # Automatically fetches your username
+          # Automatically uses the repository owner's username
           github_user_name: ${{ github.repository_owner }}
+          # Optional: pass a PAT to also include PRIVATE contributions in the snake
+          # github_token: ${{ secrets.GH_TOKEN }}
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
 
       - name: Push to output branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
